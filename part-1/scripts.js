@@ -1,4 +1,4 @@
-/* 
+
 function firstFunction(){
     return new Promise((resolve) => {
 
@@ -166,4 +166,3 @@ const promise = fetchProducts();
 promise.then((data) => console.log(data[0].name)); 
 
 
-  */
