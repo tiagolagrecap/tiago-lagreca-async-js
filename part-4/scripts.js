@@ -1,4 +1,4 @@
-function generatePrimes(quota) {
+/* function generatePrimes(quota) {
     function isPrime(n) {
       for (let c = 2; c <= Math.sqrt(n); ++c) {
         if (n % c === 0) {
@@ -32,4 +32,15 @@ function generatePrimes(quota) {
     document.querySelector("#user-input").value =
       'Try typing in here immediately after pressing "Generate primes"';
     document.location.reload();
+  }); */
+
+  if('serviceWorker' in navigator){
+    navigator.serviceWorker.register('/service-worker.js')
+    .then(function(registration){
+      console.log('Registro realizado no escopo', registration.scope);
+    })
+    .catch(function(error){
+    console.log(`Registro falhou`, error)
+
   });
+  }
