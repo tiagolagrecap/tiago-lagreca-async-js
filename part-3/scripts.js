@@ -77,3 +77,28 @@ button.addEventListener("click", async () => {
     output.textContent = `Couldn't set alarm: ${error}`;
   }
 });
+
+
+
+console.log('Comecar'); 
+ 
+setTimeout(() => { 
+ console.log('setTimeout'); 
+}, 0); 
+ 
+Promise.resolve().then(() => { 
+ console.log('Promise Resolvida'); 
+}); 
+ 
+console.log('End');
+
+
+
+
+console.log("Start");
+ 
+setTimeout(function() {
+    console.log("Delayed log after 150 milliseconds");
+}, 150);
+ 
+console.log("End");
